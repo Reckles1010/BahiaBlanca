@@ -93,8 +93,6 @@ body {
     font-family: var(--font-family);
 }
 
-/* #region QUIENES SOMOS */
-
 /* ========== NAVBAR ========== */
 .navbar {
     position: fixed;
@@ -112,18 +110,18 @@ body {
     backdrop-filter: blur(8px);
 }
 
-.server__img {
+.navbar__logo-img {
     width: 108px;
     height: 78px;
 }
 
-.navbar-links {
+.navbar__links {
     display: flex;
     gap: 36px;
     list-style: none;
 }
 
-.navbar-links a {
+.navbar__link {
     text-decoration: none;
     font-size: var(--font-size-md);
     font-weight: 700;
@@ -133,33 +131,31 @@ body {
     transition: color var(--transition-normal);
 }
 
-.navbar-links a:hover {
+.navbar__link:hover {
     color: var(--color-primary);
 }
 
-.navbar-links a.active {
+.navbar__link--active {
     color: var(--text-white);
 }
 
-.navbar-links a.inactive {
+.navbar__link--inactive {
     color: var(--text-dark);
 }
 
-.navbar-links a.inactive:hover {
+.navbar__link--inactive:hover {
     color: var(--text-muted);
 }
 
-
-/* ========== SOBRE NOSOTROS ========== */
-.about-section {
+/* ========== ABOUT (SOBRE NOSOTROS) ========== */
+.about {
     padding: 60px 40px 80px 40px;
     max-width: 1300px;
     margin: 0 auto;
     position: relative;
 }
 
-/* Resplandor rojo sutil arriba a la izquierda */
-.about-section::before {
+.about::before {
     content: '';
     position: absolute;
     top: -100px;
@@ -170,20 +166,20 @@ body {
     pointer-events: none;
 }
 
-.section-eyebrow {
+.about__eyebrow {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-bottom: 14px;
 }
 
-.section-eyebrow-line {
+.about__eyebrow-line {
     width: 30px;
     height: 2px;
     background-color: var(--color-primary);
 }
 
-.section-eyebrow-text {
+.about__eyebrow-text {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 4px;
@@ -191,7 +187,7 @@ body {
     text-transform: uppercase;
 }
 
-.section-title {
+.about__title {
     font-size: 28px;
     font-weight: 900;
     text-transform: uppercase;
@@ -200,15 +196,15 @@ body {
     letter-spacing: 1px;
 }
 
-.section-title .red {
+.about__title--red {
     color: var(--color-primary);
 }
 
-.section-title .white {
+.about__title--white {
     color: var(--text-white);
 }
 
-.section-description {
+.about__description {
     font-size: 14px;
     color: var(--text-muted);
     max-width: 100%;
@@ -216,14 +212,14 @@ body {
     margin-bottom: 40px;
 }
 
-/* Stats Grid */
-.stats-grid {
+/* About Stats */
+.about__stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
 }
 
-.stat-card {
+.about__stat {
     background-color: var(--bg-card);
     border: 1px solid var(--bg-card-border);
     border-radius: 8px;
@@ -234,18 +230,18 @@ body {
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.stat-card:hover {
+.about__stat:hover {
     border-color: #2e2e2e;
     box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 
-.stat-card-icon {
+.about__stat-icon {
     font-size: 18px;
     color: var(--color-primary);
     margin-bottom: 8px;
 }
 
-.stat-card-icon svg {
+.about__stat-icon svg {
     width: 20px;
     height: 20px;
     stroke: var(--color-primary);
@@ -255,48 +251,69 @@ body {
     stroke-linejoin: round;
 }
 
-.stat-card-value {
+.about__stat-value {
     font-size: 24px;
     font-weight: 900;
     color: var(--text-white);
     letter-spacing: 0.5px;
 }
 
-.stat-card-label {
+.about__stat-label {
     font-size: 12px;
     color: var(--text-darker);
     letter-spacing: 0.5px;
 }
 
 /* ========== DIVIDER ========== */
-.section-divider {
+.divider {
     height: 1px;
     background-color: var(--border-main);
     max-width: 1300px;
     margin: 0 auto;
 }
 
-/* ========== NUESTRA MISIÓN ========== */
-.mission-section {
+/* ========== MISSION ========== */
+.mission {
     padding: 60px 40px 80px 40px;
     max-width: 1300px;
     margin: 0 auto;
 }
 
-.mission-content {
+.mission__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.mission__eyebrow-line {
+    width: 30px;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+
+.mission__eyebrow-text {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--color-primary);
+    text-transform: uppercase;
+}
+
+.mission__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     margin-top: 30px;
 }
 
-.mission-left {
+.mission__left {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.mission-title {
+.mission__title {
     font-size: 28px;
     font-weight: 900;
     text-transform: uppercase;
@@ -304,58 +321,58 @@ body {
     letter-spacing: 1px;
 }
 
-.mission-title .white {
+.mission__title--white {
     color: var(--text-white);
 }
 
-.mission-title .red {
+.mission__title--red {
     color: var(--color-primary);
 }
 
-.mission-text {
+.mission__text {
     font-size: 14px;
     color: var(--text-muted);
     line-height: 1.8;
 }
 
-.mission-text em {
+.mission__text em {
     color: var(--text-dark);
     font-style: italic;
 }
 
 /* Progress Bars */
-.mission-right {
+.mission__right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
 }
 
-.progress-item {
+.progress {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.progress-header {
+.progress__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.progress-label {
+.progress__label {
     font-size: 13px;
     color: var(--text-muted);
     font-weight: 500;
 }
 
-.progress-value {
+.progress__value {
     font-size: 13px;
     color: var(--color-primary);
     font-weight: 800;
 }
 
-.progress-bar-track {
+.progress__track {
     width: 100%;
     height: 3px;
     background-color: #1e1e1e;
@@ -364,15 +381,14 @@ body {
     position: relative;
 }
 
-.progress-bar-fill {
+.progress__fill {
     height: 100%;
     background-color: var(--color-primary);
     border-radius: 2px;
     transition: width 1.5s ease;
 }
 
-/* Glow sutil en la barra */
-.progress-bar-fill::after {
+.progress__fill::after {
     content: '';
     position: absolute;
     right: 0;
@@ -384,20 +400,19 @@ body {
     box-shadow: 0 0 8px var(--color-primary), 0 0 16px rgba(204,0,0,0.3);
 }
 
-/* ========== VALORES SECTION ========== */
-.valores-section {
+/* ========== VALORES ========== */
+.valores {
     padding: 70px 40px 80px 40px;
     max-width: 1300px;
     margin: 0 auto;
 }
 
-/* Header centrado */
-.valores-header {
+.valores__header {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.valores-eyebrow {
+.valores__eyebrow {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -405,13 +420,13 @@ body {
     margin-bottom: 14px;
 }
 
-.valores-eyebrow-line {
+.valores__eyebrow-line {
     width: 30px;
     height: 2px;
     background-color: var(--color-primary);
 }
 
-.valores-eyebrow-text {
+.valores__eyebrow-text {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 4px;
@@ -419,30 +434,28 @@ body {
     text-transform: uppercase;
 }
 
-.valores-title {
+.valores__title {
     font-size: 26px;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.valores-title .white {
+.valores__title--white {
     color: var(--text-white);
 }
 
-.valores-title .red {
+.valores__title--red {
     color: var(--color-primary);
 }
 
-/* Grid de tarjetas */
-.valores-grid {
+.valores__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 }
 
-/* Tarjeta individual */
-.valor-card {
+.valores__card {
     background-color: var(--bg-card);
     border: 1px solid var(--border-card);
     border-radius: 10px;
@@ -453,13 +466,12 @@ body {
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.valor-card:hover {
+.valores__card:hover {
     border-color: var(--border-hover);
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Icono */
-.valor-icon {
+.valores__card-icon {
     width: 42px;
     height: 42px;
     background-color: var(--color-primary-soft);
@@ -470,7 +482,7 @@ body {
     justify-content: center;
 }
 
-.valor-icon svg {
+.valores__card-icon svg {
     width: 18px;
     height: 18px;
     stroke: var(--color-primary);
@@ -480,30 +492,23 @@ body {
     stroke-linejoin: round;
 }
 
-/* Iconos con fill en vez de stroke */
-.valor-icon.fill-icon svg {
+.valores__card-icon--fill svg {
     fill: var(--color-primary);
     stroke: none;
 }
 
-/* Título de tarjeta */
-.valor-card-title {
+.valores__card-title {
     font-size: 15px;
     font-weight: 800;
     color: var(--text-white);
     letter-spacing: 0.3px;
 }
 
-/* Texto de tarjeta */
-.valor-card-text {
+.valores__card-text {
     font-size: 13px;
     color: var(--text-dark);
     line-height: 1.8;
 }
-
-/* #endregion */
-
-/* #region FOOTER */
 
 /* ========== FOOTER ========== */
 .footer {
@@ -515,7 +520,7 @@ body {
     background-color: var(--bg-body);
 }
 
-.footer-logo {
+.footer__logo {
     font-size: var(--font-size-base);
     font-weight: 700;
     color: var(--text-white);
@@ -523,11 +528,11 @@ body {
     text-align: left;
 }
 
-.footer-logo span {
+.footer__logo--highlight {
     color: var(--color-primary);
 }
 
-.footer-copy {
+.footer__copy {
     font-size: var(--font-size-sm);
     color: var(--text-ghost);
     letter-spacing: 1px;
@@ -535,7 +540,7 @@ body {
     text-align: center;
 }
 
-.footer-socials {
+.footer__socials {
     display: flex;
     align-items: center;
     gap: var(--spacing-lg);
@@ -543,7 +548,7 @@ body {
     justify-content: flex-end;
 }
 
-.social-icon {
+.footer__social {
     width: 40px;
     height: 40px;
     border-radius: var(--radius-xl);
@@ -554,41 +559,39 @@ body {
     text-decoration: none;
 }
 
-.social-icon:hover {
+.footer__social:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
 
-.social-icon svg {
+.footer__social svg {
     width: 18px;
     height: 18px;
 }
 
-.social-icon.twitter {
+.footer__social--twitter {
     background-color: var(--color-twitter);
 }
 
-.social-icon.twitter svg {
+.footer__social--twitter svg {
     fill: var(--text-white);
 }
 
-.social-icon.tiktok {
+.footer__social--tiktok {
     background-color: var(--color-tiktok);
 }
 
-.social-icon.tiktok svg {
+.footer__social--tiktok svg {
     fill: #000000;
 }
 
-.social-icon.instagram {
+.footer__social--instagram {
     background: linear-gradient(135deg,
         var(--color-instagram-start),
         var(--color-instagram-mid),
         var(--color-instagram-end));
 }
 
-.social-icon.instagram svg {
+.footer__social--instagram svg {
     fill: var(--text-white);
 }
-
-/* #endregion */

@@ -161,7 +161,6 @@
                             <div class="section-name">${section.title}</div>
                             <div class="section-desc">${section.desc}</div>
                         </div>
-                        <div class="section-norm-count">${filtered.length}/${section.rules.length} normas</div>
                     </div>
                     <div class="rules-list">
                         ${rulesHTML}

@@ -583,13 +583,6 @@ body {
     color: var(--text-darker);
 }
 
-.section-norm-count {
-    font-size: var(--fs-sm);
-    color: var(--text-disabled);
-    font-weight: var(--fw-semibold);
-    white-space: nowrap;
-}
-
 /* ── Rules list ── */
 .rules-list {
     padding: var(--sp-2xl) var(--sp-3xl);

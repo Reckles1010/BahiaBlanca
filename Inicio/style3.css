@@ -120,6 +120,8 @@ body {
     padding-top: 75px;
 }
 
+/* #region NORMATIVAS */
+
 /* ========== SCROLLBAR ========== */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg-body); }
@@ -247,7 +249,7 @@ body {
     font-weight: var(--fw-semibold);
 }
 
-/* ── Search ── */
+/* Search */
 .search-box {
     margin: var(--sp-xl) var(--sp-xl) var(--sp-base) var(--sp-xl);
 }
@@ -273,7 +275,7 @@ body {
     color: var(--text-base);
 }
 
-/* ── Nav items ── */
+/* Nav items */
 .nav-sections {
     padding: 0 var(--sp-base);
     flex: 1;
@@ -356,7 +358,7 @@ body {
     color: var(--text-white);
 }
 
-/* ── Sidebar footer ── */
+/* Sidebar footer */
 .sidebar-footer {
     padding: var(--sp-xl) var(--sp-3xl);
     border-top: 1px solid var(--border-card);
@@ -384,7 +386,7 @@ body {
     height: calc(100vh - 75px);
 }
 
-/* ── Top bar ── */
+/* Top bar */
 .top-bar {
     display: flex;
     align-items: center;
@@ -409,7 +411,7 @@ body {
     text-transform: uppercase;
 }
 
-/* ── Hero section ── */
+/* Hero section */
 .hero-section {
     padding: var(--sp-7xl) var(--sp-6xl) var(--sp-6xl) var(--sp-6xl);
     border-bottom: 1px solid var(--border-main);
@@ -464,7 +466,7 @@ body {
     font-weight: var(--fw-bold);
 }
 
-/* ── Severity badges ── */
+/* Severity badges */
 .severity-badges {
     display: flex;
     gap: var(--sp-md);
@@ -524,7 +526,7 @@ body {
     gap: 28px;
 }
 
-/* ── Section box ── */
+/* Section box */
 .section-box {
     background-color: var(--bg-card);
     border: 1px solid var(--border-card);
@@ -571,7 +573,7 @@ body {
     color: var(--text-darker);
 }
 
-/* ── Rules list ── */
+/* Rules list */
 .rules-list {
     padding: var(--sp-2xl) var(--sp-3xl);
     display: flex;
@@ -579,7 +581,7 @@ body {
     gap: var(--sp-base);
 }
 
-/* ── Rule card ── */
+/* Rule card */
 .rule-card {
     background-color: var(--bg-card-inner);
     border: 1px solid var(--border-card);
@@ -615,7 +617,7 @@ body {
     flex: 1;
 }
 
-/* ── Severity tags ── */
+/* Severity tags */
 .severity-tag {
     display: flex;
     align-items: center;
@@ -648,7 +650,7 @@ body {
     color: var(--color-leve);
 }
 
-/* ── Rule divider & body ── */
+/* Rule divider & body */
 .rule-divider {
     height: 1px;
     background: var(--gradient-divider);
@@ -701,3 +703,5 @@ body {
     font-size: var(--fs-md);
     color: var(--text-darker);
 }
+
+/* #endregion */

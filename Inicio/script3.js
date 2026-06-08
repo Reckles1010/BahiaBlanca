@@ -89,7 +89,7 @@
             }
         ];
 
-        /* ── Nav ── */
+        /* Nav */
         function buildNav() {
             document.getElementById("navSections").innerHTML = sections.map((s, i) => `
                 <div class="nav-item ${i === 0 ? 'active' : ''}" data-section="${s.id}" onclick="navigateTo(${s.id})">
@@ -103,7 +103,7 @@
             `).join("");
         }
 
-        /* ── Helpers ── */
+        /* Helpers */
         function esc(str) {
             return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
         }
@@ -115,7 +115,7 @@
             return safe.replace(re, '<span class="highlight">$1</span>');
         }
 
-        /* ── Render ──*/
+        /* Render */
         function renderContent(filter = "") {
             const container = document.getElementById("contentArea");
             container.innerHTML = "";
@@ -178,7 +178,7 @@
             }
         }
 
-        /* ── Navegación ────────────────────────────── */
+        /* Navegación */
         function navigateTo(id) {
             setActive(id);
             const el = document.getElementById("section-" + id);
@@ -190,7 +190,7 @@
                 n.classList.toggle("active", parseInt(n.dataset.section) === id));
         }
 
-        /* ── Scroll spy ────────────────────────────── */
+        /* Scroll spy */
         document.getElementById("mainContent").addEventListener("scroll", function () {
             const top = this.scrollTop + 180;
             let current = 0;
@@ -201,11 +201,11 @@
             setActive(current);
         });
 
-        /* ── Búsqueda ──────────────────────────────── */
+        /* Búsqueda */
         document.getElementById("searchInput").addEventListener("input", function () {
             renderContent(this.value.trim());
         });
 
-        /* ── Init ──────────────────────────────────── */
+        /* Init */
         buildNav();
         renderContent();

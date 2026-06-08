@@ -1145,7 +1145,7 @@ body {
     color: var(--color-primary);
 }
 
-/* ── Grid ── */
+/* Grid */
 .proceso__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1153,7 +1153,7 @@ body {
     margin-bottom: var(--spacing-2xl);
 }
 
-/* ── Card ── */
+/* Card */
 .proceso__card {
     background-color: var(--bg-card);
     border: 1px solid var(--border-secondary);
@@ -1214,7 +1214,7 @@ body {
     line-height: 1.8;
 }
 
-/* ── Link al formulario ── */
+/* Link al formulario */
 .proceso__link-wrap {
     display: flex;
     justify-content: center;

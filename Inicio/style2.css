@@ -79,6 +79,7 @@
     --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
 }
 
+/* ========== BODY ========== */
 * {
     margin: 0;
     padding: 0;
@@ -92,6 +93,8 @@ body {
     background-color: #0a0a0a;
     font-family: var(--font-family);
 }
+
+/* #region QUIENES SOMOS */
 
 /* ========== NAVBAR ========== */
 .navbar {
@@ -147,7 +150,9 @@ body {
     color: var(--text-muted);
 }
 
-/* ========== ABOUT (SOBRE NOSOTROS) ========== */
+/* #endregion */
+
+/* ========== ABOUT ========== */
 .about {
     padding: 60px 40px 80px 40px;
     max-width: 1300px;
@@ -264,6 +269,8 @@ body {
     letter-spacing: 0.5px;
 }
 
+/* #endregion */
+
 /* ========== DIVIDER ========== */
 .divider {
     height: 1px;
@@ -271,6 +278,8 @@ body {
     max-width: 1300px;
     margin: 0 auto;
 }
+
+/* #endregion */
 
 /* ========== MISSION ========== */
 .mission {
@@ -400,6 +409,8 @@ body {
     box-shadow: 0 0 8px var(--color-primary), 0 0 16px rgba(204,0,0,0.3);
 }
 
+/* #endregion */
+
 /* ========== VALORES ========== */
 .valores {
     padding: 70px 40px 80px 40px;
@@ -510,6 +521,10 @@ body {
     line-height: 1.8;
 }
 
+/* #endregion */
+
+/* #region FOOTER */
+
 /* ========== FOOTER ========== */
 .footer {
     display: flex;
@@ -595,3 +610,5 @@ body {
 .footer__social--instagram svg {
     fill: var(--text-white);
 }
+
+/* #endregion */

@@ -103,7 +103,7 @@
     --gradient-divider: linear-gradient(90deg, #cc000055 0%, #2a2a2a 50%, transparent 100%);
 }
 
-/* ========== RESET ========== */
+/* ========== BODY ========== */
 * {
     margin: 0;
     padding: 0;
@@ -125,6 +125,10 @@ body {
 ::-webkit-scrollbar-track { background: var(--bg-body); }
 ::-webkit-scrollbar-thumb { background: var(--border-input); border-radius: var(--radius-xs); }
 
+/* #endregion */
+
+/* #region NORMATIVA */
+
 /* ========== NAVBAR ========== */
 .navbar {
     position: fixed;
@@ -134,7 +138,6 @@ body {
     z-index: 100;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0 40px;
     height: 75px;
     border-bottom: 1px solid #1a1a1a;
@@ -142,15 +145,37 @@ body {
     backdrop-filter: blur(8px);
 }
 
+.navbar__logo {
+    flex: 1;
+    text-align: left;
+}
+
 .navbar__logo-img {
     width: 108px;
     height: 78px;
 }
 
+.navbar__topbar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__topbar-text {
+    font-size: var(--fs-xs);
+    color: var(--color-primary);
+    letter-spacing: 1px;
+    font-weight: var(--fw-semibold);
+    text-transform: uppercase;
+}
+
 .navbar__links {
+    flex: 1;
     display: flex;
     gap: 36px;
     list-style: none;
+    justify-content: flex-end;
 }
 
 .navbar__link {
@@ -179,18 +204,7 @@ body {
     color: var(--text-muted);
 }
 
-.navbar__topbar {
-    display: flex;
-    align-items: center;
-}
-
-.navbar__topbar-text {
-    font-size: var(--fs-xs);
-    color: var(--color-primary);
-    letter-spacing: 1px;
-    font-weight: var(--fw-semibold);
-    text-transform: uppercase;
-}
+/* #endregion */
 
 /* ========== SIDEBAR ========== */
 .sidebar {
@@ -204,7 +218,7 @@ body {
     overflow-y: auto;
 }
 
-/* ── Sidebar Search ── */
+/* Sidebar Search */
 .sidebar__search {
     margin: var(--sp-xl) var(--sp-xl) var(--sp-base) var(--sp-xl);
 }
@@ -230,7 +244,7 @@ body {
     color: var(--text-base);
 }
 
-/* ── Sidebar Nav ── */
+/* Sidebar Nav */
 .sidebar__nav {
     padding: 0 var(--sp-base);
     flex: 1;
@@ -313,7 +327,7 @@ body {
     color: var(--text-white);
 }
 
-/* ── Sidebar Footer ── */
+/* Sidebar Footer */
 .sidebar__footer {
     padding: var(--sp-xl) var(--sp-3xl);
     border-top: 1px solid var(--border-card);
@@ -333,6 +347,8 @@ body {
     color: var(--text-ghost);
 }
 
+/* #endregion */
+
 /* ========== MAIN ========== */
 .main {
     flex: 1;
@@ -340,6 +356,8 @@ body {
     background-color: var(--bg-body);
     height: calc(100vh - 75px);
 }
+
+/* #endregion */
 
 /* ========== HERO ========== */
 .hero {
@@ -396,7 +414,7 @@ body {
     font-weight: var(--fw-bold);
 }
 
-/* ── Hero Badges ── */
+/* Hero Badges */
 .hero__badges {
     display: flex;
     gap: var(--sp-md);
@@ -431,6 +449,8 @@ body {
     color: var(--color-muy-grave);
 }
 
+/* #endregion */
+
 /* ========== CONTENT ========== */
 .content {
     padding: var(--sp-6xl);
@@ -439,7 +459,7 @@ body {
     gap: 28px;
 }
 
-/* ── Section Box ── */
+/* Section Box */
 .section {
     background-color: var(--bg-card);
     border: 1px solid var(--border-card);
@@ -486,7 +506,7 @@ body {
     color: var(--text-darker);
 }
 
-/* ── Rules List ── */
+/* Rules List */
 .section__rules {
     padding: var(--sp-2xl) var(--sp-3xl);
     display: flex;
@@ -494,7 +514,7 @@ body {
     gap: var(--sp-base);
 }
 
-/* ── Rule Card ── */
+/* Rule Card */
 .rule {
     background-color: var(--bg-card-inner);
     border: 1px solid var(--border-card);
@@ -530,7 +550,7 @@ body {
     flex: 1;
 }
 
-/* ── Severity Tags ── */
+/* Severity Tags */
 .rule__severity {
     display: flex;
     align-items: center;
@@ -563,7 +583,7 @@ body {
     color: var(--color-leve);
 }
 
-/* ── Rule Divider & Body ── */
+/* Rule Divider & Body */
 .rule__divider {
     height: 1px;
     background: var(--gradient-divider);
@@ -592,7 +612,7 @@ body {
     line-height: 1.8;
 }
 
-/* ── Search Highlight ── */
+/* Search Highlight */
 .highlight {
     background-color: #cc000033;
     color: #ff6666;
@@ -600,7 +620,7 @@ body {
     padding: 0 var(--sp-2xs);
 }
 
-/* ── Empty State ── */
+/* Empty State */
 .empty {
     text-align: center;
     padding: 70px var(--sp-3xl);
@@ -616,3 +636,5 @@ body {
     font-size: var(--fs-md);
     color: var(--text-darker);
 }
+
+/* #endregion */

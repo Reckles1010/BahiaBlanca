@@ -118,7 +118,7 @@
     box-sizing: border-box;
 }
 
-body {
+.normativas__body {
     font-family: var(--font-main);
     background-color: var(--bg-body);
     color: var(--text-base);
@@ -161,21 +161,6 @@ body {
 .navbar__logo-img {
     width: 108px;
     height: 78px;
-}
-
-.navbar__topbar {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.navbar__topbar-text {
-    font-size: var(--fs-xs);
-    color: var(--color-primary);
-    letter-spacing: 1px;
-    font-weight: var(--fw-semibold);
-    text-transform: uppercase;
 }
 
 .navbar__links {

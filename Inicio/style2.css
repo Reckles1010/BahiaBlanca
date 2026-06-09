@@ -94,15 +94,13 @@
     box-sizing: border-box;
 }
 
-body {
+.quienesSomos__body, .postulaciones__body {
     margin: 0;
     padding: 0;
     padding-top: 58px;
     background-color: #0a0a0a;
     font-family: var(--font-family);
 }
-
-/* #region QUIENES SOMOS */
 
 /* ========== NAVBAR ========== */
 .navbar {
@@ -158,7 +156,8 @@ body {
     color: var(--text-muted);
 }
 
-/* #endregion */
+
+/* #region QUIENES SOMOS */
 
 /* ========== ABOUT ========== */
 .about {
@@ -723,14 +722,6 @@ body {
 .comercio__badge svg {
     stroke: var(--color-primary);
     flex-shrink: 0;
-}
-
-/* ========== DIVIDER ========== */
-.divider {
-    height: 1px;
-    background-color: var(--border-primary);
-    max-width: 1300px;
-    margin: 0 auto;
 }
 
 /* ========== ACCESO DIRECTO ========== */

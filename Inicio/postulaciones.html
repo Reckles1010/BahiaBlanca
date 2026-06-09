@@ -8,6 +8,7 @@
 -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="styleQuerys.css">
 </head>
+
 <body class="postulaciones__body">
 
     <!-- ========== NAVBAR ========== -->
@@ -22,7 +24,6 @@
         <div class="navbar__logo">
             <img class="navbar__logo-img" src="images/image.png" alt="Bahia Blanca Community">
         </div>
- 
         <ul class="navbar__links">
             <li><a href="index.html" class="navbar__link navbar__link--inactive">Inicio</a></li>
             <li><a href="normativa.html" class="navbar__link navbar__link--inactive">Normativas</a></li>
@@ -31,382 +32,388 @@
         </ul>
     </nav>
 
-    <!-- ========== POSTULACIONES SECTION ========== -->
-    <section class="comercio">
-        <div class="comercio__header">
-            <div class="comercio__eyebrow">
-                <div class="comercio__eyebrow-line"></div>
-                <div class="comercio__eyebrow-text">Comercios del Servidor</div>
-                <div class="comercio__eyebrow-line"></div>
-            </div>
-            <h2 class="comercio__title">
-                <span class="comercio__title--red">POSTULACIONES</span> A<br>COMERCIO
-            </h2>
-            <p class="comercio__desc">
-                ¿Quieres abrir tu propio negocio en el servidor? Aquí encontrarás todo lo que necesitas
-                saber: tipos de comercios disponibles, requisitos, proceso de solicitud y el enlace
-                directo para postular.
-            </p>
-            <div class="comercio__badges">
-                <div class="comercio__badge">
-                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"/>
-                        <polyline points="12 6 12 12 16 14"/>
-                    </svg>
-                    Respuesta en 72 h
+    <main>
+        <!-- ========== POSTULACIONES SECTION ========== -->
+        <section class="comercio">
+            <div class="comercio__header">
+                <div class="comercio__eyebrow">
+                    <div class="comercio__eyebrow-line"></div>
+                    <div class="comercio__eyebrow-text">Comercios del Servidor</div>
+                    <div class="comercio__eyebrow-line"></div>
                 </div>
-                <div class="comercio__badge">
-                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    </svg>
-                    Requiere 15 días de antigüedad
-                </div>
-                <div class="comercio__badge">
-                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                        <polyline points="9 22 9 12 15 12 15 22"/>
-                    </svg>
-                    Máx. 2 negocios por jugador
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== TIPOS DE COMERCIO ========== -->
-    <section class="tipos">
-        <div class="tipos__eyebrow">
-            <div class="tipos__eyebrow-line"></div>
-            <div class="tipos__eyebrow-text">Categorías Disponibles</div>
-        </div>
-        <h2 class="tipos__title">
-            TIPOS DE <span class="tipos__title--red">COMERCIO</span>
-        </h2>
-
-        <div class="tipos__grid">
-            <!-- Card 1 -->
-            <div class="tipos__card">
-                <div class="tipos__card-icon">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
-                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
-                        <line x1="6" y1="1" x2="6" y2="4"/>
-                        <line x1="10" y1="1" x2="10" y2="4"/>
-                        <line x1="14" y1="1" x2="14" y2="4"/>
-                    </svg>
-                </div>
-                <div class="tipos__card-title">Restaurantes & Bares</div>
-                <p class="tipos__card-text">Locales de hostelería, food trucks, cafeterías y similares.</p>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="tipos__card">
-                <div class="tipos__card-icon">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/>
-                        <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/>
-                        <path d="M5 17H3v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2"/>
-                        <line x1="9" y1="17" x2="15" y2="17"/>
-                        <path d="M14 6l4 5h-6"/>
-                    </svg>
-                </div>
-                <div class="tipos__card-title">Concesionarios & Talleres</div>
-                <p class="tipos__card-text">Venta de vehículos, reparaciones mecánicas y tuning.</p>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="tipos__card">
-                <div class="tipos__card-icon">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-                        <line x1="3" y1="6" x2="21" y2="6"/>
-                        <path d="M16 10a4 4 0 0 1-8 0"/>
-                    </svg>
-                </div>
-                <div class="tipos__card-title">Tiendas & Distribución</div>
-                <p class="tipos__card-text">Comercios minoristas, almacenes y distribución de mercancía.</p>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="tipos__card">
-                <div class="tipos__card-icon">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20.38 3.46L16 2 12 5.69 8 2 3.62 3.46 2 8l3.69 4L2 16l1.62 4.54L8 22l4-3.69L16 22l4.38-1.46L22 16l-3.69-4L22 8l-1.62-4.54z"/>
-                    </svg>
-                </div>
-                <div class="tipos__card-title">Moda & Diseño</div>
-                <p class="tipos__card-text">Tiendas de ropa, tatuadores, peluquerías y estética.</p>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="tipos__card">
-                <div class="tipos__card-icon">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                    </svg>
-                </div>
-                <div class="tipos__card-title">Servicios Técnicos</div>
-                <p class="tipos__card-text">Electricistas, fontaneros, constructores y servicios especializados.</p>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="tipos__card">
-                <div class="tipos__card-icon">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                        <polyline points="9 22 9 12 15 12 15 22"/>
-                    </svg>
-                </div>
-                <div class="tipos__card-title">Inmobiliaria & Bienes</div>
-                <p class="tipos__card-text">Agencias inmobiliarias, alquiler de propiedades y gestión de locales.</p>
-            </div>
-        </div>
-
-        <!-- Nota inferior -->
-        <div class="tipos__note">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="12" y1="16" x2="12" y2="12"/>
-                <line x1="12" y1="8" x2="12.01" y2="8"/>
-            </svg>
-            <p class="tipos__note-text">
-                ¿Tu tipo de negocio no aparece en la lista? Puedes solicitarlo igualmente — el staff evaluará si encaja con la economía del servidor y te dará una respuesta personalizada.
-            </p>
-        </div>
-    </section>
-
-    <!-- ========== REQUISITOS ========== -->
-    <section class="requisitos">
-        <div class="requisitos__eyebrow">
-            <div class="requisitos__eyebrow-line"></div>
-            <div class="requisitos__eyebrow-text">Antes de Postular</div>
-        </div>
-        <h2 class="requisitos__title">
-            <span class="requisitos__title--red">REQUISITOS</span> NECESARIOS
-        </h2>
-
-        <div class="requisitos__grid">
-            <!-- Card 1 -->
-            <div class="requisitos__card">
-                <div class="requisitos__card-header">
-                    <span class="requisitos__card-number">01</span>
-                    <span class="requisitos__card-name">Antigüedad mínima de 15 días</span>
-                </div>
-                <p class="requisitos__card-text">
-                    Tu personaje debe tener al menos 15 días de actividad continua en el servidor antes
-                    de poder solicitar un comercio.
+                <h2 class="comercio__title">
+                    <span class="comercio__title--red">POSTULACIONES</span> A<br>COMERCIO
+                </h2>
+                <p class="comercio__desc">
+                    ¿Quieres abrir tu propio negocio en el servidor? Aquí encontrarás todo lo que necesitas
+                    saber: tipos de comercios disponibles, requisitos, proceso de solicitud y el enlace
+                    directo para postular.
                 </p>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="requisitos__card">
-                <div class="requisitos__card-header">
-                    <span class="requisitos__card-number">02</span>
-                    <span class="requisitos__card-name">Historial limpio de sanciones</span>
-                </div>
-                <p class="requisitos__card-text">
-                    No haber recibido bans en los últimos 30 días. Los warns leves no impiden la
-                    solicitud pero se valoran.
-                </p>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="requisitos__card">
-                <div class="requisitos__card-header">
-                    <span class="requisitos__card-number">03</span>
-                    <span class="requisitos__card-name">Lore del negocio elaborado</span>
-                </div>
-                <p class="requisitos__card-text">
-                    Debes presentar un trasfondo de tu negocio: nombre, tipo de actividad, historia
-                    del personaje-empresario y propósito dentro del servidor.
-                </p>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="requisitos__card">
-                <div class="requisitos__card-header">
-                    <span class="requisitos__card-number">04</span>
-                    <span class="requisitos__card-name">Local o ubicación propuesta</span>
-                </div>
-                <p class="requisitos__card-text">
-                    Indica si tienes una ubicación en mente o si solicitas que el staff te asigne un local
-                    disponible.
-                </p>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="requisitos__card">
-                <div class="requisitos__card-header">
-                    <span class="requisitos__card-number">05</span>
-                    <span class="requisitos__card-name">Plan de negocio básico</span>
-                </div>
-                <p class="requisitos__card-text">
-                    Describe brevemente qué servicios o productos ofrece tu comercio, cómo piensas
-                    gestionarlo y con qué frecuencia estarás activo.
-                </p>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="requisitos__card">
-                <div class="requisitos__card-header">
-                    <span class="requisitos__card-number">06</span>
-                    <span class="requisitos__card-name">Capital inicial</span>
-                </div>
-                <p class="requisitos__card-text">
-                    Debes demostrar que cuentas con el capital mínimo requerido para el tipo de
-                    negocio que solicitas (consulta la tabla de tarifas en Discord).
-                </p>
-            </div>
-        </div>
-
-        <!-- Advertencia -->
-        <div class="requisitos__warning">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-                <line x1="12" y1="9" x2="12" y2="13"/>
-                <line x1="12" y1="17" x2="12.01" y2="17"/>
-            </svg>
-            <p class="requisitos__warning-text">
-                No cumplir con alguno de estos requisitos resultará en el rechazo inmediato de la solicitud. Revisa tu perfil antes de postular para evitar esperas innecesarias.
-            </p>
-        </div>
-    </section>
-
-    <!-- ========== PROCESO DE SOLICITUD ========== -->
-    <section class="proceso">
-        <div class="proceso__eyebrow">
-            <div class="proceso__eyebrow-line"></div>
-            <div class="proceso__eyebrow-text">Cómo Funciona</div>
-        </div>
-        <h2 class="proceso__title">
-            PROCESO DE <span class="proceso__title--red">SOLICITUD</span>
-        </h2>
-
-        <div class="proceso__grid">
-            <!-- Paso 1 -->
-            <div class="proceso__card">
-                <div class="proceso__card-top">
-                    <div class="proceso__card-icon">
-                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                            <polyline points="14 2 14 8 20 8"/>
-                            <line x1="16" y1="13" x2="8" y2="13"/>
-                            <line x1="16" y1="17" x2="8" y2="17"/>
-                            <polyline points="10 9 9 9 8 9"/>
-                        </svg>
-                    </div>
-                    <span class="proceso__card-step">Paso 01</span>
-                </div>
-                <div class="proceso__card-name">Rellena el formulario</div>
-                <p class="proceso__card-text">
-                    Accede al enlace de solicitud y completa todos los campos del formulario oficial.
-                </p>
-            </div>
-
-            <!-- Paso 2 -->
-            <div class="proceso__card">
-                <div class="proceso__card-top">
-                    <div class="proceso__card-icon">
-                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="comercio__badges">
+                    <div class="comercio__badge">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"/>
                             <polyline points="12 6 12 12 16 14"/>
                         </svg>
+                        Respuesta en 72 h
                     </div>
-                    <span class="proceso__card-step">Paso 02</span>
+                    <div class="comercio__badge">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        Requiere 15 días de antigüedad
+                    </div>
+                    <div class="comercio__badge">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                        Máx. 2 negocios por jugador
+                    </div>
                 </div>
-                <div class="proceso__card-name">Revisión del staff</div>
-                <p class="proceso__card-text">
-                    El equipo de administración revisará tu solicitud en un plazo máximo de 72 horas.
-                </p>
             </div>
+        </section>
 
-            <!-- Paso 3 -->
-            <div class="proceso__card">
-                <div class="proceso__card-top">
-                    <div class="proceso__card-icon">
+    </main>
+        <!-- ========== TIPOS DE COMERCIO ========== -->
+        <section class="tipos">
+            <div class="tipos__eyebrow">
+                <div class="tipos__eyebrow-line"></div>
+                <div class="tipos__eyebrow-text">Categorías Disponibles</div>
+            </div>
+            <h2 class="tipos__title">
+                TIPOS DE <span class="tipos__title--red">COMERCIO</span>
+            </h2>
+
+            <div class="tipos__grid">
+                <!-- Card 1 -->
+                <div class="tipos__card">
+                    <div class="tipos__card-icon">
                         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                            <line x1="6" y1="1" x2="6" y2="4"/>
+                            <line x1="10" y1="1" x2="10" y2="4"/>
+                            <line x1="14" y1="1" x2="14" y2="4"/>
                         </svg>
                     </div>
-                    <span class="proceso__card-step">Paso 03</span>
+                    <div class="tipos__card-title">Restaurantes & Bares</div>
+                    <p class="tipos__card-text">Locales de hostelería, food trucks, cafeterías y similares.</p>
                 </div>
-                <div class="proceso__card-name">Entrevista IC/OOC</div>
-                <p class="proceso__card-text">
-                    En algunos casos se realizará una breve entrevista para ampliar detalles del negocio.
-                </p>
-            </div>
 
-            <!-- Paso 4 -->
-            <div class="proceso__card">
-                <div class="proceso__card-top">
-                    <div class="proceso__card-icon">
+                <!-- Card 2 -->
+                <div class="tipos__card">
+                    <div class="tipos__card-icon">
                         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
+                            <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/>
+                            <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/>
+                            <path d="M5 17H3v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2"/>
+                            <line x1="9" y1="17" x2="15" y2="17"/>
+                            <path d="M14 6l4 5h-6"/>
                         </svg>
                     </div>
-                    <span class="proceso__card-step">Paso 04</span>
+                    <div class="tipos__card-title">Concesionarios & Talleres</div>
+                    <p class="tipos__card-text">Venta de vehículos, reparaciones mecánicas y tuning.</p>
                 </div>
-                <div class="proceso__card-name">Aprobación y apertura</div>
-                <p class="proceso__card-text">
-                    Si es aprobada, recibirás acceso al local y podrás abrir tu comercio oficialmente.
+
+                <!-- Card 3 -->
+                <div class="tipos__card">
+                    <div class="tipos__card-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <path d="M16 10a4 4 0 0 1-8 0"/>
+                        </svg>
+                    </div>
+                    <div class="tipos__card-title">Tiendas & Distribución</div>
+                    <p class="tipos__card-text">Comercios minoristas, almacenes y distribución de mercancía.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="tipos__card">
+                    <div class="tipos__card-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.38 3.46L16 2 12 5.69 8 2 3.62 3.46 2 8l3.69 4L2 16l1.62 4.54L8 22l4-3.69L16 22l4.38-1.46L22 16l-3.69-4L22 8l-1.62-4.54z"/>
+                        </svg>
+                    </div>
+                    <div class="tipos__card-title">Moda & Diseño</div>
+                    <p class="tipos__card-text">Tiendas de ropa, tatuadores, peluquerías y estética.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="tipos__card">
+                    <div class="tipos__card-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <div class="tipos__card-title">Servicios Técnicos</div>
+                    <p class="tipos__card-text">Electricistas, fontaneros, constructores y servicios especializados.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="tipos__card">
+                    <div class="tipos__card-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <div class="tipos__card-title">Inmobiliaria & Bienes</div>
+                    <p class="tipos__card-text">Agencias inmobiliarias, alquiler de propiedades y gestión de locales.</p>
+                </div>
+            </div>
+
+            <!-- Nota inferior -->
+            <div class="tipos__note">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="16" x2="12" y2="12"/>
+                    <line x1="12" y1="8" x2="12.01" y2="8"/>
+                </svg>
+                <p class="tipos__note-text">
+                    ¿Tu tipo de negocio no aparece en la lista? Puedes solicitarlo igualmente — el staff evaluará si encaja con la economía del servidor y te dará una respuesta personalizada.
                 </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== ACCESO DIRECTO ========== -->
-    <section class="acceso">
-        <div class="acceso__card">
-            <div class="acceso__top">
-                <div class="acceso__icon">
-                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
-                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
-                    </svg>
-                </div>
-                <div class="acceso__info">
-                    <div class="acceso__eyebrow">
-                        <div class="acceso__eyebrow-line"></div>
-                        <div class="acceso__eyebrow-text">Acceso Directo</div>
+        <!-- ========== REQUISITOS ========== -->
+        <section class="requisitos">
+            <div class="requisitos__eyebrow">
+                <div class="requisitos__eyebrow-line"></div>
+                <div class="requisitos__eyebrow-text">Antes de Postular</div>
+            </div>
+            <h2 class="requisitos__title">
+                <span class="requisitos__title--red">REQUISITOS</span> NECESARIOS
+            </h2>
+
+            <div class="requisitos__grid">
+                <!-- Card 1 -->
+                <div class="requisitos__card">
+                    <div class="requisitos__card-header">
+                        <span class="requisitos__card-number">01</span>
+                        <span class="requisitos__card-name">Antigüedad mínima de 15 días</span>
                     </div>
-                    <h3 class="acceso__title">
-                        SOLICITA TU <span class="acceso__title--red">COMERCIO</span> AQUÍ
-                    </h3>
-                    <p class="acceso__desc">
-                        Accede directamente al formulario oficial de postulación. Asegúrate de haber leído
-                        todos los requisitos antes de rellenarlo. Las solicitudes incompletas serán rechazadas
-                        automáticamente.
+                    <p class="requisitos__card-text">
+                        Tu personaje debe tener al menos 15 días de actividad continua en el servidor antes
+                        de poder solicitar un comercio.
                     </p>
                 </div>
-                <a href="https://discordapp.com/channels/1365853998023970929/1445828744353939639" target="_blank" class="acceso__btn">
-                    Ir al formulario
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="5" y1="12" x2="19" y2="12"/>
-                        <polyline points="12 5 19 12 12 19"/>
-                    </svg>
-                </a>
+
+                <!-- Card 2 -->
+                <div class="requisitos__card">
+                    <div class="requisitos__card-header">
+                        <span class="requisitos__card-number">02</span>
+                        <span class="requisitos__card-name">Historial limpio de sanciones</span>
+                    </div>
+                    <p class="requisitos__card-text">
+                        No haber recibido bans en los últimos 30 días. Los warns leves no impiden la
+                        solicitud pero se valoran.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="requisitos__card">
+                    <div class="requisitos__card-header">
+                        <span class="requisitos__card-number">03</span>
+                        <span class="requisitos__card-name">Lore del negocio elaborado</span>
+                    </div>
+                    <p class="requisitos__card-text">
+                        Debes presentar un trasfondo de tu negocio: nombre, tipo de actividad, historia
+                        del personaje-empresario y propósito dentro del servidor.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="requisitos__card">
+                    <div class="requisitos__card-header">
+                        <span class="requisitos__card-number">04</span>
+                        <span class="requisitos__card-name">Local o ubicación propuesta</span>
+                    </div>
+                    <p class="requisitos__card-text">
+                        Indica si tienes una ubicación en mente o si solicitas que el staff te asigne un local
+                        disponible.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="requisitos__card">
+                    <div class="requisitos__card-header">
+                        <span class="requisitos__card-number">05</span>
+                        <span class="requisitos__card-name">Plan de negocio básico</span>
+                    </div>
+                    <p class="requisitos__card-text">
+                        Describe brevemente qué servicios o productos ofrece tu comercio, cómo piensas
+                        gestionarlo y con qué frecuencia estarás activo.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="requisitos__card">
+                    <div class="requisitos__card-header">
+                        <span class="requisitos__card-number">06</span>
+                        <span class="requisitos__card-name">Capital inicial</span>
+                    </div>
+                    <p class="requisitos__card-text">
+                        Debes demostrar que cuentas con el capital mínimo requerido para el tipo de
+                        negocio que solicitas (consulta la tabla de tarifas en Discord).
+                    </p>
+                </div>
             </div>
-            <div class="acceso__bottom">
-                <div class="acceso__meta">
-                    <div class="acceso__meta-label">Plataforma</div>
-                    <div class="acceso__meta-value">Discord — Tickets</div>
+
+            <!-- Advertencia -->
+            <div class="requisitos__warning">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                    <line x1="12" y1="9" x2="12" y2="13"/>
+                    <line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
+                <p class="requisitos__warning-text">
+                    No cumplir con alguno de estos requisitos resultará en el rechazo inmediato de la solicitud. Revisa tu perfil antes de postular para evitar esperas innecesarias.
+                </p>
+            </div>
+        </section>
+
+        <!-- ========== PROCESO DE SOLICITUD ========== -->
+        <section class="proceso">
+            <div class="proceso__eyebrow">
+                <div class="proceso__eyebrow-line"></div>
+                <div class="proceso__eyebrow-text">Cómo Funciona</div>
+            </div>
+            <h2 class="proceso__title">
+                PROCESO DE <span class="proceso__title--red">SOLICITUD</span>
+            </h2>
+
+            <div class="proceso__grid">
+                <!-- Paso 1 -->
+                <div class="proceso__card">
+                    <div class="proceso__card-top">
+                        <div class="proceso__card-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                        </div>
+                        <span class="proceso__card-step">Paso 01</span>
+                    </div>
+                    <div class="proceso__card-name">Rellena el formulario</div>
+                    <p class="proceso__card-text">
+                        Accede al enlace de solicitud y completa todos los campos del formulario oficial.
+                    </p>
                 </div>
-                <div class="acceso__meta">
-                    <div class="acceso__meta-label">Canal</div>
-                    <div class="acceso__meta-value">#postulaciones-comercio</div>
+
+                <!-- Paso 2 -->
+                <div class="proceso__card">
+                    <div class="proceso__card-top">
+                        <div class="proceso__card-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <span class="proceso__card-step">Paso 02</span>
+                    </div>
+                    <div class="proceso__card-name">Revisión del staff</div>
+                    <p class="proceso__card-text">
+                        El equipo de administración revisará tu solicitud en un plazo máximo de 72 horas.
+                    </p>
                 </div>
-                <div class="acceso__meta">
-                    <div class="acceso__meta-label">Horario de Revisión</div>
-                    <div class="acceso__meta-value">Todos los días</div>
+
+                <!-- Paso 3 -->
+                <div class="proceso__card">
+                    <div class="proceso__card-top">
+                        <div class="proceso__card-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <span class="proceso__card-step">Paso 03</span>
+                    </div>
+                    <div class="proceso__card-name">Entrevista IC/OOC</div>
+                    <p class="proceso__card-text">
+                        En algunos casos se realizará una breve entrevista para ampliar detalles del negocio.
+                    </p>
+                </div>
+
+                <!-- Paso 4 -->
+                <div class="proceso__card">
+                    <div class="proceso__card-top">
+                        <div class="proceso__card-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <span class="proceso__card-step">Paso 04</span>
+                    </div>
+                    <div class="proceso__card-name">Aprobación y apertura</div>
+                    <p class="proceso__card-text">
+                        Si es aprobada, recibirás acceso al local y podrás abrir tu comercio oficialmente.
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- ========== ACCESO DIRECTO ========== -->
+        <section class="acceso">
+            <div class="acceso__card">
+                <div class="acceso__top">
+                    <div class="acceso__icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                        </svg>
+                    </div>
+                    <div class="acceso__info">
+                        <div class="acceso__eyebrow">
+                            <div class="acceso__eyebrow-line"></div>
+                            <div class="acceso__eyebrow-text">Acceso Directo</div>
+                        </div>
+                        <h3 class="acceso__title">
+                            SOLICITA TU <span class="acceso__title--red">COMERCIO</span> AQUÍ
+                        </h3>
+                        <p class="acceso__desc">
+                            Accede directamente al formulario oficial de postulación. Asegúrate de haber leído
+                            todos los requisitos antes de rellenarlo. Las solicitudes incompletas serán rechazadas
+                            automáticamente.
+                        </p>
+                    </div>
+                    <a href="https://discordapp.com/channels/1365853998023970929/1445828744353939639" target="_blank" class="acceso__btn">
+                        Ir al formulario
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="acceso__bottom">
+                    <div class="acceso__meta">
+                        <div class="acceso__meta-label">Plataforma</div>
+                        <div class="acceso__meta-value">Discord — Tickets</div>
+                    </div>
+                    <div class="acceso__meta">
+                        <div class="acceso__meta-label">Canal</div>
+                        <div class="acceso__meta-value">#postulaciones-comercio</div>
+                    </div>
+                    <div class="acceso__meta">
+                        <div class="acceso__meta-label">Horario de Revisión</div>
+                        <div class="acceso__meta-value">Todos los días</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!-- ========== FOOTER ========== -->
     <footer class="footer">
+
         <div class="footer__logo">Bahia Blanca<span class="footer__logo--highlight"> Community</span></div>
+
         <div class="footer__copy">© 2026 — Todos los derechos reservados</div>
+
         <div class="footer__socials">
             <a href="https://x.com/BahiaCommunity" target="_blank" class="footer__social footer__social--twitter">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
